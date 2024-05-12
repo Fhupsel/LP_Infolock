@@ -207,4 +207,8 @@ main img{
   .empresa, .quem-somos{
     margin-left: 10px;
   }
+
+  .h2-perguntas{
+    padding: 20px 0;
+  }
 }
