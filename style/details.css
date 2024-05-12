@@ -1,0 +1,76 @@
+.h2-perguntas{
+  padding: 40px 0;
+}
+
+.lista-perguntas details{
+  position: relative;
+}
+
+.lista-perguntas{
+  margin-top: 20px;
+}
+
+.lista-perguntas details::after {
+  content: ""; /* Adiciona conteúdo ao pseudo-elemento */
+  position: absolute; /* Posiciona o pseudo-elemento */
+  bottom: 0; /* Alinha o pseudo-elemento à parte inferior do details */
+  left: 0; /* Alinha o pseudo-elemento à esquerda do details */
+  width: 100%; /* Largura total */
+  height: .8px; /* Altura da linha */
+  background: linear-gradient(to right, transparent 0%, #7D7D81 40%, #7D7D81 60%, transparent 100%); /* Degradê */
+}
+
+.perguntas .lista-perguntas > details {
+  padding: 20px;
+}
+
+summary {
+  cursor: pointer;
+}
+
+details[open] summary ~ * {
+  animation: sweep 1s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    opacity: 0;
+    margin-left: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0px;
+  }
+}
+
+details summary {
+  position: relative;
+  padding-left: 32px;
+  list-style-type: none;
+}
+
+details summary::before {
+  content: "▼"; 
+  position: absolute;
+  left: 0;
+  transition: transform 0.5s;
+  color: #7030A0;
+}
+
+details[open] summary::before {
+  transform: rotate(180deg); /* Rotação para indicar o estado aberto */
+}
+
+.lista-perguntas li {
+  padding-left: 8px;
+  padding-top: 16px;
+}
+
+span {
+  background: linear-gradient(to right, #550288, #7030A0); 
+  -webkit-background-clip: text; /* Para aplicar o gradiente apenas ao texto */
+  -webkit-text-fill-color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
+  font-weight: 900;
+}
+
+

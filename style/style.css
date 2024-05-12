@@ -1,0 +1,207 @@
+body{
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #EAEDEF;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0;
+}
+
+.logo {
+  width: 100px; /* Defina a largura desejada */
+  height: auto; /* Mantém a proporção da altura para evitar distorções */
+}
+
+li{
+  list-style: none;
+}
+
+header a{
+  text-decoration: none;
+  color: #7D7D7D;
+  text-transform: uppercase;
+  padding: 0 0.8rem;
+  font-weight: 600;
+}
+header a:last-child{
+  padding-right: 0;
+}
+header a:hover{
+  color: #550288;
+}
+
+main h1{
+  color: #7030A0;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+main h2{
+  text-align: center;
+}
+
+.chamada-1{
+  display: flex;
+  justify-content: space-between;
+}
+
+main img{
+  width: 100%;
+  height: auto; /* Manter a proporção da imagem */
+  display: block; /* Remover espaço extra abaixo da imagem */
+}
+
+.txt{
+  font-size: 20px;
+  align-content: center;
+  margin-right: 40px;
+  line-height: 1.75rem;
+  max-width: 64ch;
+}
+
+.chamada-1 button{
+  padding: 18px;
+  border-radius: 8px;
+  border: none;
+  color: #FFF;
+  background-color: #550288;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+}
+.chamada-1 button:hover{
+  background-color: #7030A0;
+}
+
+.txt-lateral{
+  font-weight: 600;
+}
+
+.porque{
+  text-align: center;
+  padding: 40px 0;
+}
+
+.motivos{
+  display: flex;
+  justify-content: space-around;
+  color: #7030A0;
+}
+.motivos li{
+  display: flex;
+  align-items: center;
+  font-size: 1.25rem;
+}
+.motivos img{
+  height: 24px;
+  width: 24px;
+  padding-right: 8px;
+}
+.motivos li p:hover{
+  color: #550288;
+}
+
+.empresa p{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.quem-somos{
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  line-height: 1.75rem;
+  margin-bottom: 40px;
+}
+.quem-somos div{
+  margin-right: 20px;
+}
+.quem-somos img{
+  border-radius: 4px;
+}
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.whatsapp-btn:hover{
+  width: 120px;
+  height: 120px;
+}
+
+.whatsapp-btn img {
+  width: 50%;
+  height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+  }
+  header li{
+    margin-top: 32px;
+  }
+  header li a:first-child{
+    padding-left: 0;
+  }
+  .txt{
+    margin: 0 auto;
+  }
+  .quem-somos img {
+    display: none;
+  }
+
+  .porque .motivos {
+    display: flex;
+    margin: 10px;
+    flex-direction: column; /* Organiza os itens em uma única coluna */
+  }
+
+  .porque .motivos div:nth-child(2) {
+    margin-bottom: 0; /* Remove o espaço abaixo da segunda div */
+  }
+  .porque .motivos div img {
+    display: none; /* Oculta a imagem */
+  }
+  .porque .motivos div p {
+    font-size: 14px; /* Diminui o tamanho da fonte */
+    white-space: nowrap; /* Impede que o texto seja quebrado */
+    text-align: center; /* Alinha o texto ao meio */
+  }
+
+  .chamada-1 {
+    display: flex;
+    flex-direction: column; /* Organiza os itens em uma única coluna */
+    align-items: center; /* Alinha os itens ao centro horizontal */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  .txt{
+    text-align: center;
+  }
+  .chamada-1 div {
+    margin-top: 20px; /* Adiciona espaço entre os itens */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+
+  .whatsapp-btn {
+    right: -32px;
+    bottom: 0px;
+  }
+
+  .empresa, .quem-somos{
+    margin-left: 10px;
+  }
+}
