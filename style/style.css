@@ -154,14 +154,14 @@ main h2{
 }
 
 @media screen and (max-width: 600px) {
-  header{
+  head{
     flex-direction: column;
     align-items: center;
   }
-  header li{
+  head li{
     margin-top: 32px;
   }
-  header li a:first-child{
+  head li a:first-child{
     padding-left: 0;
   }
   .porque{
