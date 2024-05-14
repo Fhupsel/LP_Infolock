@@ -1,11 +1,19 @@
 body{
-  max-width: 960px;
-  margin: 0 auto;
-  background-color: #EAEDEF;
+  margin: 0px;
+  padding: opx;
   font-family: 'Roboto', sans-serif;
 }
 
 header{
+  background-color: #EAEDEF;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.head{
   display: flex;
   justify-content: space-between;
   padding: 3rem 0;
@@ -22,7 +30,8 @@ li{
 
 header a{
   text-decoration: none;
-  color: #7D7D7D;
+  /* color: #7D7D7D; */
+  color: black;
   text-transform: uppercase;
   padding: 0 0.8rem;
   font-weight: 600;
@@ -34,10 +43,13 @@ header a:hover{
   color: #550288;
 }
 
+main{
+  padding: 40px;
+}
+
 main h1{
   color: #7030A0;
   text-align: center;
-  margin-bottom: 40px;
 }
 
 main h2{
@@ -47,12 +59,6 @@ main h2{
 .chamada-1{
   display: flex;
   justify-content: space-between;
-}
-
-main img{
-  width: 100%;
-  height: auto; /* Manter a proporção da imagem */
-  display: block; /* Remover espaço extra abaixo da imagem */
 }
 
 .txt{
@@ -84,6 +90,7 @@ main img{
 .porque{
   text-align: center;
   padding: 40px 0;
+  background-color: #EAEDEF;
 }
 
 .motivos{
