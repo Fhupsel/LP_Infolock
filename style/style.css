@@ -183,9 +183,9 @@ main h2{
   .porque .motivos div:nth-child(2) {
     margin-bottom: 0; /* Remove o espaço abaixo da segunda div */
   }
-  .porque .motivos div img {
-    display: none; /* Oculta a imagem */
-  }
+  /* .porque .motivos div img {
+    display: none; 
+  } */
   .porque .motivos div p {
     font-size: 14px; /* Diminui o tamanho da fonte */
     white-space: nowrap; /* Impede que o texto seja quebrado */
