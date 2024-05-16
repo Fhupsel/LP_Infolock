@@ -67,10 +67,8 @@ details[open] summary::before {
 }
 
 span {
-  background: linear-gradient(to right, #550288, #7030A0); 
-  -webkit-background-clip: text; /* Para aplicar o gradiente apenas ao texto */
-  -webkit-text-fill-color: transparent; /* Torna o texto transparente para que o gradiente seja visível */
   font-weight: 900;
+  color: #7030A0;
 }
 
 
